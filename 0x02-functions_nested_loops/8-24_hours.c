@@ -1,11 +1,13 @@
 #include "main.h"
+
 /**
-* jack_bauer - print every miniute of the day
-* Description: print jack beauer 
-*/
+ * jack_bauer - print every miniute of the day
+ * Description: print jack beauer 
+ */
 void jack_bauer(void)
 {
-	int t, x;
+	int t;
+	int x;
 	
 	for (t = 0 ; t < 24 ; t++)
 	{
