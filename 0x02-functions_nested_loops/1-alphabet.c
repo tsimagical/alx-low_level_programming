@@ -1,16 +1,10 @@
 #include "main.h"
 
 /**
- * main - Entry point
+ * print_alphabet - print alphabet in small case
  *
- * Return: Always 0 (Success)
+ * Return: empty
  */
-int main(void)
-{
-	print_alphabet();
-    return (0);
-}
-
 void print_alphabet(void) {
     char ch;
 
