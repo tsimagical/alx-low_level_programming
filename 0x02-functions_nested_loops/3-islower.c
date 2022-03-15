@@ -4,8 +4,8 @@
 /**
  * is_lower - check lower case
  * Description: check the given character is lower case or not
- * Parameter: C characther
- * Return: 1 if it is lower and 0 otherwise
+ * @param c character value
+ * @return 1 if it is lower and 0 otherwise
  */
 int _islower(int c)
 {
