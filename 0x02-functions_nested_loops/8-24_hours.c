@@ -2,7 +2,7 @@
 
 /**
  * jack_bauer - print every miniute of the day
- * Return:  print jack beauer 
+ * Return: print jack beauer
  */
 void jack_bauer(void)
 {
