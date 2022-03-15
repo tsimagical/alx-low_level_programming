@@ -13,3 +13,16 @@ void print_alphabet_x10(void)
 		print_alphabet();
 }
 
+/**
+* print_alphabet - print all alphabet in small case
+*
+* Return: empty
+*/
+void print_alphabet(void)
+{
+	char ch;
+
+	for (ch = 'a' ; ch <= 'z'; ch++)
+		_putchar(ch);
+	_putchar('\n');
+}
