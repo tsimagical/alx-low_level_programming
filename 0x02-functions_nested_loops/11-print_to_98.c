@@ -18,13 +18,17 @@ void print_to_98(int n)
 	for (z = n ; z <= x ; z++)
 	{
 		int y;
-	
+		
 		if (x < 0)
 			y = z * i;
 		else
 			y = z;
-			
-		if (y >= 10 || y <= -10)
+		if (y < 0)
+		{
+			y = y * -1;
+			_putchar('-');
+		}
+		if (y >= 10)
 		{
 			_putchar(y / 10 + '0');
 			_putchar(y % 10 + '0');
@@ -38,7 +42,7 @@ void print_to_98(int n)
 			_putchar(',');
 			_putchar(' ');
 		}
-	}	
+	}
 	_putchar('\n');
-	
+
 }
