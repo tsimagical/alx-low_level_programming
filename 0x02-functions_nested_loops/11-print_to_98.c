@@ -5,15 +5,26 @@
 void print_to_98(int n)
 {
 	int i;
-	int y;
-	
+	int z;
+	int x;
+
+	x = 98;
 	if (n > 98)
 		i = -1;
 	else
 		i = 1;
-	for (y = n ; y <= 98 ; y = y + i)
+	x = x * i;
+	n = n * i;
+	for (z = n ; z <= x ; z++)
 	{
-		if (y >= 10)
+		int y;
+	
+		if (x < 0)
+			y = z * i;
+		else
+			y = z;
+			
+		if (y >= 10 || y <= -10)
 		{
 			_putchar(y / 10 + '0');
 			_putchar(y % 10 + '0');
