@@ -23,20 +23,9 @@ void print_to_98(int n)
 			y = z * i;
 		else
 			y = z;
-		if (y < 0)
-		{
-			y = y * -1;
-			_putchar('-');
-		}
-		if (y >= 10)
-		{
-			_putchar(y / 10 + '0');
-			_putchar(y % 10 + '0');
-		}
-		else
-		{
-			_putchar(y + '0');
-		}
+		
+		print_num(y);
+
 		if (y != 98)
 		{
 			_putchar(',');
@@ -44,5 +33,19 @@ void print_to_98(int n)
 		}
 	}
 	_putchar('\n');
+
+}
+
+void print_num(int n)
+{
+	if (n < 0)
+	{
+		_putchar('-');
+		n = -n;
+	}
+	
+	if (n / 10)
+		print_num(n/10);
+	_putchar(n%10 + '0');
 
 }
