@@ -4,31 +4,22 @@
  */
 void times_table(void)
 {
-	int x, y, z;
+	int x, y;
 
 	x = 0;
 
 	while (x < 10)
 	{
-		for (y = 0 ; y < 10 ; y++)
+		for (y = 0 ; y < 10 ; y = y++)
 		{
-			if (y == 0)
-			{
-				_putchar('0');
-				continue;
-			}
+			int z;
+
 			z = x * y;
-			_putchar(',');
-			_putchar(' ');
-			if (z >= 10)
+			_putchar(z + '0');
+			if (y < 9)
 			{
-				_putchar(z / 10 + '0');
-				_putchar(z % 10 + '0');
-			}
-			else
-			{
+				_putchar(',');
 				_putchar(' ');
-				_putchar(z + '0');
 			}
 		x++;
 		}
