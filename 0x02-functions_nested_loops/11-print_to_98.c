@@ -18,13 +18,12 @@ void print_to_98(int n)
 	for (z = n ; z <= x ; z++)
 	{
 		int y;
-		
+
 		if (x < 0)
 			y = z * i;
 		else
 			y = z;
 		print_num(y);
-		
 		if (y != 98)
 		{
 			_putchar(',');
@@ -35,6 +34,10 @@ void print_to_98(int n)
 
 }
 
+/**
+ * print_num - print any long number
+ * @n: number
+ */
 void print_num(int n)
 {
 	if (n < 0)
