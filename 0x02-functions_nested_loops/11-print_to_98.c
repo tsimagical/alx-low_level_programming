@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  * print_to_98 - prints the numbers to 98
+ * @n: offset number
  */
 void print_to_98(int n)
 {
