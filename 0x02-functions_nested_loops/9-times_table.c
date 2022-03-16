@@ -23,15 +23,13 @@ void times_table(void)
 			}
 			else
 			{
+				if (y > 0)
+					_putchar(' ');
 				_putchar(z + '0');
 			}
 			if (y < 9)
 			{
 				_putchar(',');
-				_putchar(' ');
-			}
-			if (y < 9 && z < 10)
-			{
 				_putchar(' ');
 			}
 		}
