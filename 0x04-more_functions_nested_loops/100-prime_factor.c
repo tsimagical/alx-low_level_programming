@@ -2,9 +2,9 @@
 #include <math.h>
 
 /**
- * main - main block
- * Description: Find and print the largest prime factor of the number
- * Return 0
+ * main - main entry
+ * 
+ * Return: Always 0.
  */
 int main(void)
 {
@@ -19,5 +19,6 @@ int main(void)
 			break;
 		}
 	}
+	
 	return (0);
 }
