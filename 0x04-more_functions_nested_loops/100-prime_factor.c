@@ -7,18 +7,18 @@
  * Return: Always 0.
  */
 int main(void)
+
 {
-	int c;
-	long num;
+	long n, i;
 	
-	num = 612852475143;
-	for (c = (int) sqrt(num); c > 2; c++)
+	n = 612852475143;
+	for (i = 2; i < n; i++)
 	{
-		if (num % c == 0)
-		{
-			printf("%d\n", c);
-			break;
-		}
+		while (n % i == 0)
+			n = n / i;
 	}
+	
+	printf("%lu\n", n);
+
 	return (0);
 }
